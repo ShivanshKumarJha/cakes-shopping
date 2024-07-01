@@ -30,7 +30,7 @@ const secureString = async uniqueString => {
 
 exports.sendVerificationEmail = async ({ _id, email }, res) => {
   try {
-    const url = 'http://localhost:4000/';
+    const url = 'https://cake-n-bakes-shopping.onrender.com/';
     const uniqueString = uuidv4();
     const mailOptions = {
       from: process.env.EMAIL_ID,
