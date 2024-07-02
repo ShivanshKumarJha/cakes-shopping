@@ -105,7 +105,7 @@ exports.postAddAddress = async (req, res) => {
   } = req.body;
   console.log(req.body);
   let addressbook = await Address.findOne({ userId: id });
-  if (addressbook.details.length > 0) {
+  if (addressbook && addressbook.details.length > 0) {
     console.log('addressbook exists');
     await Address.findOneAndUpdate(
       { userId: id },
@@ -123,7 +123,8 @@ exports.postAddAddress = async (req, res) => {
             country: country,
           },
         },
-      }
+      },
+      { new: true, upsert: true }
     );
   } else {
     console.log('addressbook doesnt exists');
@@ -144,9 +145,9 @@ exports.postAddAddress = async (req, res) => {
             select: true,
           },
         },
-      }
+      },
+      { new: true, upsert: true }
     );
-
     console.log('default address saved');
   }
   res.redirect('back');

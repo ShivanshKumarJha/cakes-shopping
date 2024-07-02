@@ -10,7 +10,7 @@ const addressSchema = new mongoose.Schema({
       landmark: String,
       pin: Number,
       district: String,
-      state: { type: String, default: 'Kerala' },
+      state: { type: String, default: 'Haryana' },
       country: { type: String, default: 'India' },
       contact: Number,
       select: { type: Boolean, default: false },

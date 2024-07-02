@@ -1,14 +1,8 @@
 <%- include('../layouts/user-header') %>
 
-
-
-
-
-
     <div class="container">
         <div class="main-body profile">
             <!-- <div class="row gutters-sm mt-5"> -->
-
 
             <div class="row mb-3">
                 <div class="col-md-8">
@@ -23,7 +17,7 @@
                             <!-- <div class="card address-card mb-3"> -->
                             <!-- <div class=" col card-body"> -->
                             <div class="row m-auto">
-                                <%if(address.details.length> 0){%>
+                                <%if(address && address.details.length> 0){%>
                                     <% address.details.forEach(function(ad){%>
                                         <div class="col-md-4 mb-3 text-start address position-relative">
                                             <h4 class="mb-4">Address</h4>
@@ -106,10 +100,10 @@
                                                                 <div class="form-group">
                                                                     <select name="district" class="box" id="">
                                                                         <option value="">District</option>
-                                                                        <option value="Malappuram">Malappuram</option>
-                                                                        <option value="Kozhikkode">Kozhikkode</option>
-                                                                        <option value="Palakkad">Palakkad</option>
-                                                                        <option value="Trissur">Trissur</option>
+                                                                        <option value="Faridabad">Faridabad</option>
+                                                                        <option value="Gurugram">Gurugram</option>
+                                                                        <option value="Kurukshetra">Kurukshetra</option>
+                                                                        <option value="Ambala">Ambala</option>
                                                                     </select>
 
 
@@ -121,7 +115,7 @@
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <input type="text" class="box" name="state"
-                                                                        value="Kerala" disabled>
+                                                                        value="Haryana" disabled>
 
                                                                 </div>
                                                                 <div class="form-group">
@@ -191,7 +185,8 @@
                             <input name="payment" type="radio" id="card-payment" value="Card" checked>
                             <label for="card-payment">Debit/Credit</label>
                             <br>
-                            <button type="submit" class="btn mb-5 ms-5" <% if(address.details.length < 1){%> disabled
+                            <button type="submit" class="btn mb-5 ms-5" <% if(address && address.details.length < 1){%>
+                                disabled
                                 <%}%> > Place Order
                             </button>
                         </form>
