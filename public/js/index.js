@@ -185,6 +185,7 @@ $('#password').validate({
     },
   },
 });
+
 $('#otp-form').validate({
   errorClass: 'error fail-alert',
 
@@ -203,6 +204,7 @@ $('#otp-form').validate({
     },
   },
 });
+
 $('#email-form').validate({
   errorClass: 'error fail-alert',
 
@@ -363,6 +365,7 @@ function addToCart(proId, wt) {
     },
   });
 }
+
 function removeFromCart(proId, wt) {
   $.ajax({
     url: '/cart/delete/' + proId + '/' + wt,
@@ -374,6 +377,7 @@ function removeFromCart(proId, wt) {
     },
   });
 }
+
 function changeQuantity(proId, wt, price, count) {
   let qty = $('#qtyOf' + proId).text();
 
@@ -451,6 +455,7 @@ function addToCartAndRemove(proId) {
     },
   });
 }
+
 function removeFromWishlist(proId) {
   $.ajax({
     url: '/wishlist/delete/' + proId,
@@ -527,7 +532,7 @@ $('#payment-form').submit(e => {
 
 function razorpayPayment(order) {
   var options = {
-    key: 'rzp_test_M7kqvBj4orNzLd', // Enter the Key ID generated from the Dashboard
+    key: process.env.KEY_ID, // Enter the Key ID generated from the Dashboard
     amount: order.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
     currency: 'INR',
     name: 'cakes.N.bakes',
@@ -602,6 +607,7 @@ function changeStatus(id) {
     },
   });
 }
+
 $('.alert-danger').fadeOut(5000);
 $('.alert-success').fadeOut(5000);
 

@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const cors = require('cors');
 
 const env = require('dotenv').config();
 const port = process.env.PORT || 4000;
@@ -40,6 +41,7 @@ mongoose
 
 app.set('view engine', 'ejs');
 app.use(nocache());
+app.use(cors());
 app.use(cookie('cookieSecret'));
 app.use(
   session({
