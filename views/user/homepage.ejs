@@ -4,11 +4,10 @@
 
     <section class="home">
         <% for( let i=0 ; i < banners.length ; i++ ){ %>
-            <div class="<%if(i==0){ %>
-            slide active <% }else{%>
-        slide
-        <% } %> "
-                style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)) ,url(/public/images/banner-img/<%=banners[i].banner%>) no-repeat;">
+            <div class="<%if(i==0){ %> slide active <% }else{%> slide <% } %>" style="
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+        url(/public/images/banner-img/<%=banners[i].banner%>) no-repeat;
+    ">
                 <div class="content">
                     <h3>
                         <%= banners[i].title %>
@@ -23,18 +22,16 @@
 
                 <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
                 <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
-
     </section>
 
     <!-- home section ends     -->
 
     <section class="week-specials">
-
         <h2 class="text-center">Week specials</h2>
         <div class="banner mt-5">
             <%specials.forEach(function(sp){%>
                 <div class="box m-2">
-                    <img src="/public//images/product-img/<%=sp.image%>" alt="">
+                    <img src="/public//images/product-img/<%=sp.image%>" alt="" />
                     <div class="content">
                         <!-- <span>special offer</span> -->
                         <h3>
@@ -45,21 +42,16 @@
                     </div>
                 </div>
                 <%})%>
-
         </div>
     </section>
 
-
-
-
     <!-- banner section starts  -->
     <section class="categories">
-
         <h2 class="text-center">Categories</h2>
         <div class="banner mt-5">
             <%categories.forEach(function(cat){%>
                 <div class="box m-2">
-                    <img src="/public//images/category-img/<%=cat.image%>" alt="">
+                    <img src="/public//images/category-img/<%=cat.image%>" alt="" />
                     <div class="content">
                         <!-- <span>special offer</span> -->
                         <h3>
@@ -69,10 +61,7 @@
                     </div>
                 </div>
                 <%})%>
-
         </div>
     </section>
 
-    <!-- banner section ends --
-    <%- include('../layouts/user-footer-section.ejs') %>
-        <%- include('../layouts/user-footer.ejs') %>
+    <%- include('../layouts/user-footer-section.ejs') %> <%- include('../layouts/user-footer.ejs') %>
