@@ -14,6 +14,7 @@ const session = require('express-session');
 const cookie = require('cookie-parser');
 const flash = require('connect-flash');
 const nocache = require('nocache');
+const MongoStore = require('connect-mongo');
 
 const userRouter = require('./routes/user-router');
 const adminRouter = require('./routes/admin-router');
@@ -46,9 +47,13 @@ app.use(cookie('cookieSecret'));
 app.use(
   session({
     secret: 'sessionSecret',
-    resave: true,
-    saveUninitialized: true,
-    cookie: { maxAge: 60 * 1000 * 60, secure: false },
+    resave: false,
+    saveUninitialized: false,
+    cookie: { maxAge: 1000 * 60 * 100, secure: false },
+    store: MongoStore.create({
+      mongoUrl: process.env.MONGODB_URI,
+      autoRemove: 'disabled',
+    }),
   })
 );
 
