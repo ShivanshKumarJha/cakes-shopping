@@ -13,7 +13,7 @@ In user side,
 - Wishlist
 - Cart
 - Order placement
-- Order history `<br>`
+- Order history <br>
 
 In admin side,
 
