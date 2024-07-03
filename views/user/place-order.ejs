@@ -182,9 +182,10 @@
                             <input name="payment" type="radio" id="cash-payment" value="COD">
                             <label for="cash-payment">Cash on Delivery</label>
                             <br>
-                            <input name="payment" type="radio" id="card-payment" value="Card" checked>
+                            <!-- TODO will add this in future after getting razorpay test key and secret key -->
+                            <!-- <input name="payment" type="radio" id="card-payment" value="Card" checked>
                             <label for="card-payment">Debit/Credit</label>
-                            <br>
+                            <br> -->
                             <button type="submit" class="btn mb-5 ms-5" <% if(address && address.details.length < 1){%>
                                 disabled
                                 <%}%> > Place Order
