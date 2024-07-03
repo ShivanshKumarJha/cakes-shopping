@@ -35,19 +35,19 @@ In admin side,
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
-| Technology          | Description                                          |
-| ------------------- | ---------------------------------------------------- |
-| Node JS, Express JS | For backend                                          |
-| EJS                 | As view engine                                       |
-| Mongoose            | Database library                                     |
-| CSS and Bootstrap   | For styling                                          |
-| Nodemailer          | For sending emails                                   |
-| Axios               | For API calls                                        |
-| Bcrypt              | For password hashing                                 |
-| Multer              | For multiple file upload                             |
-| JQuery-validation   | Form validation                                      |
-| Razorpay            | For payment integration                              |
-| Otp-generator       | To generate random OTP                               |
+| Technology          | Description                                        |
+| ------------------- | -------------------------------------------------- |
+| Node JS, Express JS | For backend                                        |
+| EJS                 | As view engine                                     |
+| Mongoose            | Database library                                   |
+| CSS and Bootstrap   | For styling                                        |
+| Nodemailer          | For sending emails                                 |
+| Axios               | For API calls                                      |
+| Bcrypt              | For password hashing                               |
+| Multer              | For multiple file upload                           |
+| JQuery-validation   | Form validation                                    |
+| Razorpay            | For payment integration                            |
+| Otp-generator       | To generate random OTP                             |
 | Chart JS            | To make diagramatic <br>reports on admin dashboard |
 
 # Pages of my website:
@@ -132,3 +132,57 @@ In admin side,
   This is an active contact form to connect with company. User can send message through this form. There is also a location of the company.
 
   <img src="https://github.com/ShivanshKumarJha/cakes-shopping/assets/135617158/673c1785-ebc1-486a-8b7e-32f3ef0754a7" width="500"> <br>
+
+## Admin side :
+
+- ### **Login** <br>
+
+  Admin can login by typing predefined email and password and enter to dashboard.
+
+  <img src="https://github.com/ShivanshKumarJha/cakes-shopping/assets/135617158/52dc37ac-cfde-4430-97d4-532068232c4d" width="500"> <br>
+
+- ### **Dashboard** <br>
+
+  Dashboard includes counts of reports and diagramatic representaion of reports
+
+  <img src="https://github.com/ShivanshKumarJha/cakes-shopping/assets/135617158/e674b6f5-5100-4c9f-8d97-27006dbac2d5" width="500"> <br>
+
+- ### **User management** <br>
+
+  Admin can view user lists and block or unblock users
+
+  <img src="https://github.com/ShivanshKumarJha/cakes-shopping/assets/135617158/eca4a310-17f0-4433-a3d0-aa64b1e49bbd" width="500"> <br>
+
+- ### **Category management** <br>
+
+  Admin can view all categories, add new category, edit current categories, and remove unwanted categories only if product on that category is empty.
+
+  <img src="https://github.com/ShivanshKumarJha/cakes-shopping/assets/135617158/f6dc85e7-f312-4d55-bde7-dad82cbd7c9b" width="500"> <br>
+
+- ### **Product management** <br>
+
+  Admin can view all products, add new items into categories, remove products and edit product details. There is an option in edit form to add multiple images of products and also there is a checkbox to make product vegan or special to display in those categories. <br>
+
+  <img src="https://github.com/ShivanshKumarJha/cakes-shopping/assets/135617158/817ee236-26b2-4418-87f3-2bee9aacdfdd" width="500"> <br>
+
+  **Edit form for product**
+
+  <img src="https://github.com/ShivanshKumarJha/cakes-shopping/assets/135617158/eb385bfe-c6fb-429f-a263-aae4410e5937" width="500"> <br>
+
+- ### **Order management** <br>
+
+  Admin can view all orders and update order status from this page.
+
+  <img src="https://github.com/ShivanshKumarJha/cakes-shopping/assets/135617158/55b8d053-bb50-4c70-b449-b91720477c7e" width="500"> <br>
+
+- ### **Coupon management** <br>
+
+  Admin can create discount coupons, remove old coupons or edit coupons from this page
+
+  <img src="https://github.com/ShivanshKumarJha/cakes-shopping/assets/135617158/2b97e651-a7f3-4197-bcfa-199ab9a7ad01" width="500"> <br>
+
+- ### **Banner management** <br>
+
+  Admin can add banners to display in homepage with title, description and link to category.
+
+  <img src="https://github.com/ShivanshKumarJha/cakes-shopping/assets/135617158/0629fcdb-e273-4956-bdb8-cf1f8ebe3b73" width="500"> <br>
