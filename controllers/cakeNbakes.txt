@@ -1,0 +1,160 @@
+c:/Shivansh/WebDev/Backend/cakes-shopping/
+  ├─ config/
+  │  ├─ auth.js
+  │  ├─ database.js
+  │  └─ nodemailer.js
+  ├─ controllers/
+  │  ├─ admin-controller.js
+  │  ├─ cart-controller.js
+  │  ├─ category-controller.js
+  │  ├─ coupon-controller.js
+  │  ├─ order-controller.js
+  │  ├─ order-status-controller.js
+  │  ├─ product-controller.js
+  │  ├─ profile-controller.js
+  │  ├─ user-controller.js
+  │  ├─ user-product-controller.js
+  │  └─ wishlist-controller.js
+  ├─ models/
+  │  ├─ addressModel.js
+  │  ├─ adminModel.js
+  │  ├─ bannerModel.js
+  │  ├─ cartModel.js
+  │  ├─ categoryModel.js
+  │  ├─ couponModel.js
+  │  ├─ orderModel.js
+  │  ├─ productModel.js
+  │  ├─ userEmailverificationModel.js
+  │  ├─ userModel.js
+  │  ├─ userPasswordResetModel.js
+  │  └─ wishlistModel.js
+  ├─]node_modules/ (ignored)
+  ├─ public/
+  │  ├─ css/
+  │  │  ├─ adminStyle.css
+  │  │  ├─ style.css
+  │  │  └─ style.scss
+  │  ├─ images/
+  │  │  ├─ banner-img/
+  │  │  │  ├─ 1719912498997-1659588975325-pexels-pixabay-461431.jpg
+  │  │  │  ├─ 1719912534835-1659761387447-hoYmaeeH3tFSTSJonQ2o6g.jpg
+  │  │  │  ├─ 1719912569738-1659760294848-90daf562-1620-40b3-9531-92903d5fe34b.jpg
+  │  │  │  └─ 1719912611288-1659764706267-pexels-ronmar-lacamiento-806363.jpg
+  │  │  ├─ category-img/
+  │  │  │  ├─ 1719910057695-1659725381145-baby-cakes.jpeg
+  │  │  │  ├─ 1719910073591-1659725248081-asset 7.jpeg
+  │  │  │  ├─ 1719910100918-1659543380139-pies-trifles.jpeg
+  │  │  │  ├─ 1719910172668-1659588389164-pexels-valeria-boltneva-8625933.jpg
+  │  │  │  ├─ 1719910190608-1659725453942-4.jpg
+  │  │  │  ├─ 1719910211402-1659725346750-asset 3.jpeg
+  │  │  │  └─ 1719910233246-1661245835611-CakeinaJarHERO-af41a5c224d3416e9c29fe59bdaf6974-38e3108c3e4b4145aa6fb8ec6a52287c.jpg
+  │  │  ├─ product-img/
+  │  │  │  ├─ 1719910374675-1659548373819-asset 4.jpeg
+  │  │  │  ├─ 1719910469104-1659548432523-asset 5.jpeg
+  │  │  │  ├─ 1719911189339-1659548625941-asset 4.jpeg
+  │  │  │  ├─ 1719911271176-1659548567765-asset 3.jpeg
+  │  │  │  ├─ 1719911498620-1659548086950-pies-trifles.jpeg
+  │  │  │  ├─ 1719911662245-1659547390439-asset 7.jpeg
+  │  │  │  ├─ 1719911734136-1659547048194-asset 3.jpeg
+  │  │  │  ├─ 1719911834324-1659547249880-asset 5.jpeg
+  │  │  │  ├─ 1719911924416-1659547625722-asset 10.jpeg
+  │  │  │  ├─ 1719912018664-1659547672635-asset 11.jpeg
+  │  │  │  └─ 1719912215539-1659548895654-asset 6.jpeg
+  │  │  ├─ readme-img/
+  │  │  │  ├─ admin/
+  │  │  │  │  ├─ admin-login.png
+  │  │  │  │  ├─ banners-management.jpg
+  │  │  │  │  ├─ category-management.jpg
+  │  │  │  │  ├─ coupons-management.jpg
+  │  │  │  │  ├─ dashboard.jpg
+  │  │  │  │  ├─ edit-form-single-product.jpg
+  │  │  │  │  ├─ order-management.jpg
+  │  │  │  │  ├─ products-management.jpg
+  │  │  │  │  └─ user-management.png
+  │  │  │  └─ user/
+  │  │  │     ├─ cart.jpg
+  │  │  │     ├─ contact-us.jpg
+  │  │  │     ├─ forgot-password.png
+  │  │  │     ├─ hover-on-product.png
+  │  │  │     ├─ login-user.png
+  │  │  │     ├─ navBar-login.png
+  │  │  │     ├─ navBar-logout.png
+  │  │  │     ├─ order-details.jpg
+  │  │  │     ├─ order-history.jpg
+  │  │  │     ├─ order-success.png
+  │  │  │     ├─ place-order.jpg
+  │  │  │     ├─ products.jpg
+  │  │  │     ├─ register-user.png
+  │  │  │     ├─ single-product.png
+  │  │  │     ├─ whole-page.jpg
+  │  │  │     └─ wishlist.png
+  │  │  ├─ user-img/
+  │  │  │  ├─ 1719913357466-profile.jpg
+  │  │  │  └─ prof-img.jpg
+  │  │  ├─ 526-5264359_check-mark-icon-transparent-hd-png-download.png
+  │  │  ├─ brand-img.png
+  │  │  ├─ favicon.png
+  │  │  └─ no-image.jpg
+  │  └─ js/
+  │     └─ index.js
+  ├─ routes/
+  │  ├─ admin-router.js
+  │  ├─ cart-router.js
+  │  ├─ category-router.js
+  │  ├─ coupon-router.js
+  │  ├─ order-router.js
+  │  ├─ order-status-router.js
+  │  ├─ product-router.js
+  │  ├─ profile-router.js
+  │  ├─ user-product-router.js
+  │  ├─ user-router.js
+  │  └─ wishlist-router.js
+  ├─ views/
+  │  ├─ admin/
+  │  │  ├─ 404.ejs
+  │  │  ├─ add-banner.ejs
+  │  │  ├─ add-category.ejs
+  │  │  ├─ add-coupon.ejs
+  │  │  ├─ add-product.ejs
+  │  │  ├─ banner.ejs
+  │  │  ├─ category.ejs
+  │  │  ├─ coupons.ejs
+  │  │  ├─ dashboard.ejs
+  │  │  ├─ edit-banner.ejs
+  │  │  ├─ edit-category.ejs
+  │  │  ├─ edit-coupon.ejs
+  │  │  ├─ edit-product.ejs
+  │  │  ├─ login-ad.ejs
+  │  │  ├─ orders.ejs
+  │  │  ├─ products.ejs
+  │  │  └─ users.ejs
+  │  ├─ layouts/
+  │  │  ├─ admin-footer.ejs
+  │  │  ├─ admin-header.ejs
+  │  │  ├─ user-footer-section.ejs
+  │  │  ├─ user-footer.ejs
+  │  │  └─ user-header.ejs
+  │  └─ user/
+  │     ├─ 404.ejs
+  │     ├─ about.ejs
+  │     ├─ cart.ejs
+  │     ├─ category-products.ejs
+  │     ├─ contact.ejs
+  │     ├─ forgot-password.ejs
+  │     ├─ homepage.ejs
+  │     ├─ login.ejs
+  │     ├─ order-single-details.ejs
+  │     ├─ order-success.ejs
+  │     ├─ orders.ejs
+  │     ├─ place-order.ejs
+  │     ├─ products.ejs
+  │     ├─ signup.ejs
+  │     ├─ single-product.ejs
+  │     ├─ user-profile.ejs
+  │     └─ wishlist.ejs
+  ├─].env (ignored)
+  ├─ .gitignore
+  ├─ app.js
+  ├─ package-lock.json
+  ├─ package.json
+  └─ README.md

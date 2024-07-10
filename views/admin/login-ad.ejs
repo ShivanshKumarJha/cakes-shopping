@@ -1,5 +1,14 @@
 <%- include('../layouts/admin-header.ejs') %>
 
+  <style>
+    .note {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #555;
+      background-color: #f9f9f9;
+      border-left: 5px solid #007bff;
+    }
+  </style>
 
   <!-- <section class="login-form login-admin"> -->
   <div class="dash-content login-form login-admin">
@@ -20,19 +29,35 @@
             <span class="fas fa-lock"></span>
             <input type="password" name="password" placeholder="Enter Admin's password" id="password">
           </div>
+          <div class="note">
+            <p>Don't fill the sign-in form, just click Sign In.</p>
+          </div>
           <input type="submit" value="sign in" class="btn">
           <!-- <div class="flex">
-          <input type="checkbox" name="" id="remember-me">
-          <label for="remember-me">remember me</label>
-          <a href="#">forgot password?</a>
-      </div>
-      <a href="/register" class="btn">create an account</a> -->
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+            <a href="#">forgot password?</a>
+          </div> -->
+          <!-- <a href="/register" class="btn">Create an account</a> -->
     </form>
   </div>
   </section>
 
 
+  <script>
+    window.onload = function () {
+      document.getElementById('email').value = '';
+      document.getElementById('password').value = '';
+    }
 
+    document.getElementById('admin-login-form').onsubmit = function () {
+      document.getElementById('email').value = 'shivanshkumarjha07@gmail.com';
+      document.getElementById('password').value = '123456';
+      document.getElementById('email').style.display = 'none';
+      document.getElementById('password').style.display = 'none';
+    }
+
+  </script>
 
 
   <%- include('../layouts/admin-footer.ejs') %>
